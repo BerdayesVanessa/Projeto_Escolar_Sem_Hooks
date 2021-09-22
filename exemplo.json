@@ -1,0 +1,36 @@
+{
+  "dados-pessoais": [
+    {
+      "id": 1,
+      "imagem": "https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?cs=srgb&dl=pexels-pixabay-220453.jpg&fm=jpg",
+      "nome completo": "John Doe",
+      "nacionalidade": "Venezuelano",
+      "data de nascimento":"11/11/1986",
+      "cpf": "856.946.731-46",
+      "rg": "13.785.431-7",
+      "rnm": "X123456-Y",
+      "sexo": "feminino",
+      "deficiência física": "não",
+      "estado civil": "solteiro",
+      "email": "john@doe.email",
+      "telefone": "1111-1111",
+      "cep": "13275-140",
+      "endereço": "Avenida A",
+      "bairro": "Jardim Bom Retiro",
+      "complemento": "casa 20",
+      "cidade": "Valinhos",
+      "estado": "São Paulo",
+      "país": "Brasil"
+    }
+  ],
+
+  "dados-profissionais": [
+    {
+      "id": 1,
+      "escolaridade": "Ensino superior",
+      "graduação": "Bacharelado",
+      "curso": "Administração",
+      "profissão": "Administrador"
+    }
+  ] 
+}

@@ -1,5 +1,5 @@
 import React from "react";
-import {BrowserRouter, Switch, Route} from "react-router-dom";
+import {BrowserRouter, Switch, Route, Link} from "react-router-dom";
 
 import Cadastrar from "./pages/Cadastrar";
 import Editar from "./pages/Editar";

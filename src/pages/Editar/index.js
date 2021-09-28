@@ -1,23 +1,17 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
+import Navegacao from "../Navegacao";
 
 function Editar(){
 
     return(
             <div class="container"> 
             <div class="d-flex justify-content-end">
-                <nav class="navbar navbar-dark bg-dark">
-                    <nav class="nav nav-pills flex-column flex-sm-row justify-content-end">
-                        <a class="flex-sm-fill text-sm-center nav-link " href="#">Cadastrar</a>
-                        <a class="flex-sm-fill text-sm-center nav-link" href="#">Editar</a>
-                        <a class="flex-sm-fill text-sm-center nav-link" href="#">Buscar</a>
-                        <a class="flex-sm-fill text-sm-center nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-                    </nav>
-                </nav>
+               <Navegacao />
             </div>  
        
             <fieldset>
-                <legend>Dados pessoais</legend>
+                <legend>Dados pessoais Editar</legend>
                 <div class="row" >
                     <div class="col-6">
                         <div class="form-group">

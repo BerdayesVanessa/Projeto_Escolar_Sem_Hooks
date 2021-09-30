@@ -1,16 +1,11 @@
-import React from 'react';
-import Routes from './routes';
-import "bootstrap/dist/css/bootstrap.min.css";
+import Lista from "./Lista";
 
-
-
-
-function App() {
+export default function App() {
   return (
-    <div>
-      <Routes />
+    <div className="App">
+      <Lista />
     </div>
   );
 }
 
-export default App;
+

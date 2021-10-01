@@ -4,7 +4,21 @@ import "bootstrap/dist/css/bootstrap.min.css";
 export default class Aluno extends React.Component {
   constructor(props) {
     super(props);
+
+    this.delete = this.delete.bind(this);
   }
+
+  delete() {
+    const { id } = this.props.dadosPessoa;
+    const url = `http://localhost:3001/dadosPessoais/${id}`;
+
+    fetch(url, {
+      method: "DELETE"
+    });
+
+    this.props.fetchdadosPessoaisCallback();
+  }
+
 
   render() {
     const {
@@ -56,7 +70,7 @@ export default class Aluno extends React.Component {
                   </button>
                 </td>
                 <td>
-                  <button type="button" class="btn btn-danger">
+                  <button onClick={this.delete} type="button" class="btn btn-danger">
                     Apagar
                   </button>
                 </td>

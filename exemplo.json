@@ -57,8 +57,21 @@
       "id": 6
     },
     {
+<<<<<<< HEAD
       "nome": "uhuuuuu consegui",
       "id": 8
+=======
+      "nome": "samuel",
+      "id": 7
+    },
+    {
+      "nome": "uhuuuuu consegui",
+      "id": 8
+    },
+    {
+      "nome": "gustavo",
+      "id": 9
+>>>>>>> c95ee017a78ee9ff126588f0c6e543b129f4bb93
     }
   ],
   "dadosProfissionais": [

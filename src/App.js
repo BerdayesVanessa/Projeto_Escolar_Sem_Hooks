@@ -27,7 +27,11 @@ export default class App extends React.Component {
   return (
     <div className="App">
       <Cadatrar cadastrarDadosPessoaCallback={this.fetchdadosPessoais} />
+<<<<<<< HEAD
       <Lista dadosPessoais={this.state.dadosPessoais} fetchdadosPessoaisCallback={this.fetchdadosPessoais}/>
+=======
+      <Lista dadosPessoais={this.state.dadosPessoais}/>
+>>>>>>> c95ee017a78ee9ff126588f0c6e543b129f4bb93
     </div>
   );
 }

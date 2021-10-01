@@ -1,11 +1,35 @@
+import React from "react";
 import Lista from "./Lista";
+import Cadatrar from "./Cadastrar"
 
-export default function App() {
+export default class App extends React.Component {
+  constructor(){
+    super()
+
+    this.state = {
+      dadosPessoais: []
+    }
+
+    this.fetchdadosPessoais = this.fetchdadosPessoais.bind(this);
+  }
+
+  fetchdadosPessoais(){
+    fetch("http://localhost:3001/dadosPessoais")
+      .then((response) => response.json())
+      .then((dadosPessoais) => this.setState({ dadosPessoais: dadosPessoais }));
+  }
+
+  componentDidMount(){
+    this.fetchdadosPessoais()
+  }
+
+  render(){
   return (
     <div className="App">
-      <Lista />
+      <Cadatrar cadastrarDadosPessoaCallback={this.fetchdadosPessoais} />
+      <Lista dadosPessoais={this.state.dadosPessoais}/>
     </div>
   );
 }
-
+}
 
